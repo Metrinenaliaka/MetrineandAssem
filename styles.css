@@ -1,4 +1,5 @@
 h1 {
+    top: 50;
     color: red;
 text-align: centered;
 font-size: auto;
@@ -25,4 +26,16 @@ background-color: aqua;
 color: red;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 padding: 1em;
+}
+@media (hover: hover) {
+    abbr:hover {
+        color: limegreen;
+        transition-duration: 1s;
+    }
+}
+
+@media not all and (hover: hover) {
+    abbr::after {
+        content: ' (' attr(title) ')';
+    }
 }
