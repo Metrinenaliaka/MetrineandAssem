@@ -1,41 +1,57 @@
-h1 {
-    top: 50;
-    color: red;
-text-align: centered;
-font-size: auto;
-font-family: Verdana;
-}
-p {
-    color: blue;
-    text-align: centered;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif
-}
-.project-title {
- color: yellow;
-font-size: 25px;
-font-style: italic;
-font-family: 'Courier New', Courier, monospace;
+#welcome-section{
+        height: 80vh;
+        width: 100vw;
+        background-color: #197033;
+        opacity: 0.8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 #navbar {
-position: fixed;
-width: 100%;
-top: 0;
-left: 0;
-background-color: aqua;
-color: red;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-padding: 1em;
-}
-@media (hover: hover) {
-    abbr:hover {
-        color: limegreen;
-        transition-duration: 1s;
+    
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    color: red;
+    padding: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-}
 
-@media not all and (hover: hover) {
-    abbr::after {
-        content: ' (' attr(title) ')';
+    h1 {
+        top: -20;
+        color: red;
+    text-align: centered;
+    font-size: auto;
+    font-family: Verdana;
     }
-}
+    p {
+        top: 20;
+        color: blue;
+        text-align: centered;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif
+    }
+    .project-title {
+     color: yellow;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    }
+    abbr {
+        color: chocolate;
+    }
+    
+    @media (hover: hover) {
+        abbr:hover {
+            color: limegreen;
+            transition-duration: 1s;
+        }
+    }
+    
+    @media not all and (hover: hover) {
+        abbr::after {
+            content: ' (' attr(title) ')';
+        }
+    }
